@@ -1,0 +1,11 @@
+struct Leader;
+struct Trail;
+struct Answer;
+extern struct Leader *new_leader(void);
+extern void free_leader(struct Leader*);
+extern void push(struct Leader*, char, char);
+extern void print(struct Leader*);
+extern struct Answer *sort(struct Leader*);
+extern struct Answer *new_answer(void);
+extern void free_answer(struct Answer*);
+extern void print_answer(struct Answer*);
